@@ -20,14 +20,14 @@
     <div class="flex items-center space-x-4">
       <button ng-click="nc.showSidebar()" id="sidebarToggle"
         class="p-2 rounded-md  text-white bg-gray-700 hover:bg-gray-600 ">
-        <svg ng-class="{'hidden': nc.ToggleSidebar}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+        <svg ng-class="{'hidden': !nc.ToggleSidebar}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
         fill="currentColor" class="size-6">
         <path fill-rule="evenodd"
         d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
             clip-rule="evenodd" />
           </svg>
 
-          <svg ng-class="{'hidden': !nc.ToggleSidebar}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          <svg ng-class="{'hidden': nc.ToggleSidebar}" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
           stroke-width="1.5" stroke="currentColor" class="size-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
